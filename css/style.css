@@ -26,42 +26,42 @@
     --hero-gradient: linear-gradient(135deg, rgba(139, 0, 0, 0.9), rgba(187, 34, 34, 0.8));
 }
 
-/* MODO OSCURO - PALETA ELEGANTE */
+/* MODO OSCURO - PALETA NEGRO Y AZUL MARINO */
 [data-theme="dark"] {
-    --primary-color: #E94560; /* Rojo coral elegante */
-    --secondary-color: #F16B6F; /* Rosa salmón suave */
-    --accent-color: #FF6B9D; /* Rosa vibrante para acentos */
-    --text-dark: #F8F8F2; /* Texto principal muy claro */
-    --text-light: #A8A8A3; /* Texto secundario gris cálido */
-    --background-light: #0F0F0F; /* Negro profundo */
-    --white: #1A1A1A; /* Gris carbón para tarjetas */
-    --wine-light: #FF758F; /* Rosa coral */
-    --wine-dark: #C73650; /* Rojo coral oscuro */
-    --shadow: 0 8px 25px rgba(233, 69, 96, 0.15);
+    --primary-color: #1E3A8A; /* Azul marino principal */
+    --secondary-color: #3B82F6; /* Azul más claro */
+    --accent-color: #60A5FA; /* Azul cielo para acentos */
+    --text-dark: #F8FAFC; /* Texto principal muy claro */
+    --text-light: #CBD5E1; /* Texto secundario gris azulado */
+    --background-light: #000000; /* Negro puro */
+    --white: #111827; /* Gris muy oscuro para tarjetas */
+    --wine-light: #3B82F6; /* Azul intermedio */
+    --wine-dark: #1E40AF; /* Azul marino oscuro */
+    --shadow: 0 8px 25px rgba(30, 58, 138, 0.25);
     
     /* Variables específicas modo oscuro */
-    --card-background: #1F1F1F; /* Gris carbón más cálido */
-    --nav-background: rgba(21, 21, 21, 0.95); /* Negro translúcido */
+    --card-background: #1F2937; /* Gris carbón azulado */
+    --nav-background: rgba(17, 24, 39, 0.95); /* Negro azulado translúcido */
     --hero-gradient: linear-gradient(135deg, 
-        rgba(233, 69, 96, 0.2) 0%, 
-        rgba(255, 107, 157, 0.1) 50%, 
-        rgba(199, 54, 80, 0.15) 100%);
+        rgba(30, 58, 138, 0.3) 0%, 
+        rgba(59, 130, 246, 0.15) 50%, 
+        rgba(30, 64, 175, 0.2) 100%);
 }
 
 /* ===== EFECTOS ESPECIALES MODO OSCURO ===== */
 [data-theme="dark"] body {
-    background-image: radial-gradient(circle at 20% 80%, rgba(233, 69, 96, 0.03) 0%, transparent 50%),
-                      radial-gradient(circle at 80% 20%, rgba(255, 107, 157, 0.03) 0%, transparent 50%);
+    background-image: radial-gradient(circle at 20% 80%, rgba(30, 58, 138, 0.03) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
 }
 
 [data-theme="dark"] .service-card {
-    border: 1px solid rgba(233, 69, 96, 0.2);
+    border: 1px solid rgba(30, 58, 138, 0.2);
     backdrop-filter: blur(10px);
 }
 
 [data-theme="dark"] .service-card:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 15px 35px rgba(233, 69, 96, 0.25);
+    box-shadow: 0 15px 35px rgba(30, 58, 138, 0.25);
     transform: translateY(-10px) scale(1.02);
 }
 
@@ -77,7 +77,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at center, transparent 0%, rgba(15, 15, 15, 0.1) 100%);
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
     pointer-events: none;
 }
 
@@ -296,17 +296,17 @@ header {
 /* Estilos especiales del botón en modo oscuro */
 [data-theme="dark"] .theme-toggle {
     border-color: var(--primary-color);
-    box-shadow: 0 0 15px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 0 15px rgba(30, 58, 138, 0.3);
     backdrop-filter: blur(10px);
 }
 
 [data-theme="dark"] .theme-toggle:hover {
-    box-shadow: 0 0 25px rgba(233, 69, 96, 0.5);
+    box-shadow: 0 0 25px rgba(30, 58, 138, 0.5);
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
 }
 
 [data-theme="dark"] .theme-toggle:focus {
-    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.3);
 }
 
 /* ===== SECCIÓN HERO ===== */
@@ -1446,10 +1446,10 @@ html {
 /* ===== ANIMACIONES ESPECIALES MODO OSCURO ===== */
 @keyframes darkModeGlow {
     0%, 100% {
-        box-shadow: 0 0 5px rgba(233, 69, 96, 0.2);
+        box-shadow: 0 0 5px rgba(30, 58, 138, 0.2);
     }
     50% {
-        box-shadow: 0 0 20px rgba(233, 69, 96, 0.4);
+        box-shadow: 0 0 20px rgba(30, 58, 138, 0.4);
     }
 }
 
@@ -1472,13 +1472,13 @@ html {
 
 /* Efectos de resplandor para elementos importantes */
 [data-theme="dark"] .hero-content h2 {
-    text-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+    text-shadow: 0 0 20px rgba(30, 58, 138, 0.3);
 }
 
 [data-theme="dark"] .hero-content .btn {
-    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
 }
 
 [data-theme="dark"] .hero-content .btn:hover {
-    box-shadow: 0 6px 25px rgba(233, 69, 96, 0.5);
+    box-shadow: 0 6px 25px rgba(30, 58, 138, 0.5);
 }
