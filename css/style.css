@@ -398,6 +398,10 @@ header {
     flex-wrap: wrap;
 }
 
+.stat-item {
+    text-align: center;
+}
+
 .stat-item h3 {
     font-size: 2.5rem;
     font-weight: 700;
